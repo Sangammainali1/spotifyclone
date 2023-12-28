@@ -78,3 +78,70 @@ body{
 .header > * {
     padding: 20px;
 }
+
+.spotifyPlaylists {
+    padding: 16px;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+
+.card > * {
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play {
+    position: absolute;
+    top:180px;
+    right: 20px;
+}
+
+.buttons > * {
+    margin: 0 12px;
+}
+
+.signupbtn {
+    background-color: black;
+    color: grey;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    width: 82px;
+    font-weight: bold;
+}
