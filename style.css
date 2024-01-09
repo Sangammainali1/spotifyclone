@@ -214,6 +214,7 @@ body{
     background-color: rgb(19, 16, 16);
     position: absolute;
     bottom: 10px;
+    cursor: pointer;
 }
 
 .circle {
@@ -224,4 +225,8 @@ body{
     position: relative;
     bottom: 4px;
     transition: left 0.5s;
+}
+
+.songbuttons img {
+    cursor: pointer;
 }
