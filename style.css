@@ -43,6 +43,8 @@ body{
     font-size: 13px;
 }
 
+
+
 .heading img {
     width: 25px;
 }
@@ -90,7 +92,7 @@ body{
     flex-wrap: wrap;
     margin: 30px;
     max-height: 80vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .card {
@@ -229,4 +231,50 @@ body{
 
 .songbuttons img {
     cursor: pointer;
+}
+
+.hamburger {
+    display: hidden;
+}
+.hamburgerContainer {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* responsiveness code */
+
+@media (max-width:1400px){
+    .left {
+        background-color: black;
+        position: absolute;
+        left: -110%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
+    }
+
+    .left .close {
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        width: 29px;
+    }
+
+    .right{
+        width: 100%;
+
+    }
+
+    .playbar{
+        width: 81vw;
+    }
+    .seekbar {
+        width: 90%;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

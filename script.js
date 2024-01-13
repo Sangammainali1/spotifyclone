@@ -135,6 +135,17 @@ async function main(){
       currentSong.currentTime =( (currentSong.duration)*percent)/100
     })
 
+
+    // add an event listener for hamburger button
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+      document.querySelector(".left").style.left= "0"
+    })
+
+    // add an event listener for close button
+    document.querySelector(".close").addEventListener("click",()=>{
+      document.querySelector(".left").style.left= "-110%"
+    })
+
     // play the first songs
     var audio = new Audio(songs[0])
     // audio.play()
