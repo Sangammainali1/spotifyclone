@@ -156,7 +156,8 @@ body{
     width: 90%;
     padding: 12px;
     width: 66vw;
-    height: 30px;
+    height: 60px;
+
 }
 
 .songbuttons {
@@ -164,6 +165,11 @@ body{
     justify-content: center;
     gap: 15px;
 }
+.songinfo {
+    width: 357px;
+    height: 1px;
+}
+
 
 .songList ul {
     padding: 0 10px;
@@ -233,6 +239,10 @@ body{
     cursor: pointer;
 }
 
+.close {
+    display: none;
+}
+
 .hamburger {
     display: hidden;
 }
@@ -252,7 +262,7 @@ body{
         left: -110%;
         transition: all .3s;
         z-index: 1;
-        width: 233px;
+        width: 350px;
     }
 
     .left .close {
@@ -267,6 +277,10 @@ body{
 
     }
 
+    .close {
+        display: block;
+    }
+
     .playbar{
         width: 81vw;
     }
@@ -276,5 +290,21 @@ body{
 
     .hamburger {
         display: block;
+    }
+
+    .cardContainer{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .songinfo{
+        width: auto;
+    }
+    .songtime {
+        width: auto;
     }
 }
